@@ -18,7 +18,7 @@ $connection = $db->connect();
     $resultado -> bindParam(':imagen',$imagen);
     
     if($resultado->execute()){
-        header('Location: home.php');
+        header('Location:home.php');
     }else{
         echo "No se registraron los datos";
     }

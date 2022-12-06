@@ -1,6 +1,5 @@
 <?php
         require "db.php";
-      
         $usuario=$_POST['usuario'];
         $password=$_POST['password'];
 
@@ -18,8 +17,10 @@
                     session_start();
                     $_SESSION["usuario"] = $value["nombre"];
                     header("location:home.php");
+                } else {
+                    header("location:login.php");
                 }
             } else {
                 header("location:login.php");
             }
-        }   
+        }

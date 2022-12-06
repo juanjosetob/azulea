@@ -16,7 +16,7 @@
     
 
     if($resultado->execute()){
-        header("Location: Home.php");
+        header("Location:home.php");
 
     }else{
         echo "No se elimino el registro";

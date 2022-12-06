@@ -10,7 +10,7 @@
     if (!strlen($peticion)>0) {
         echo("permitidas solo hasta 100 palabras");
     }
-    if (!strpos($email, '@')>0) {
+    if (!strpos($email,'@')>0) {
         echo("el correo electronico debe contener @");
     }
 ?>
